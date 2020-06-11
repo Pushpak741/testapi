@@ -3,6 +3,7 @@ from flask_restful import Api
 from resources.emp import Emp
 
 app=Flask(__name__)
+
 app.config['PROPAGATE_EXCEPTIONS']=True
 app.config['PREFERRED_URL_SCHEME']='https'
 api=Api(app)
